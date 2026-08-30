@@ -18,7 +18,7 @@ function App() {
         <Route path='/ali' />
         <Route path='/ily' />
         <Route path='/erm' />
-        <Route path='/ari' />
+        <Route path='/ari' element={<Ari />} />
       </Routes>
     </Router>
     </>
