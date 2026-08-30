@@ -182,7 +182,7 @@ function TypedCode({ lines, speed = 26, startDelay = 300 }) {
   );
 }
 
-export default function App() {
+export default function Ari() {
   const [copied, setCopied] = useState(false);
 
   return (

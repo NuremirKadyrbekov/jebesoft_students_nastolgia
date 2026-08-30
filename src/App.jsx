@@ -5,6 +5,12 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import AielitaPage from './pages/AielitaPage'
 import AliaskatPage from './pages/AliaskatPage'
 
+
+
+
+
+import Ari from './pages/Ariet'
+
 function App() {
 
   return (
