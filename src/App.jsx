@@ -2,6 +2,7 @@
 import './App.css'
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import AliaskatPage from './pages/AliaskatPage'
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
         <Route path='/sam'/>
         <Route path='/ami'/>
         <Route path='/bai'/>
-        <Route path='/ali' />
+        <Route path='/ali' element={<AliaskatPage/>} />
         <Route path='/ily' />
         <Route path='/erm' />
         <Route path='/ari' />
