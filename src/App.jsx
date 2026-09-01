@@ -1,6 +1,15 @@
 import './App.css'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ErmPage from './pages/ErmPage.jsx'
+import AielitaPage from './pages/AielitaPage'
+import AliaskatPage from './pages/AliaskatPage'
+
+
+
+
+
+import Ari from './pages/Ariet'
+
 function App() {
 
   return (
@@ -9,14 +18,14 @@ function App() {
       <Routes>
         <Route path='/nur'/>
         <Route path='/med'/>
-        <Route path='/aie'/>
+        <Route path='/aie' element={<AielitaPage/>}/>
         <Route path='/sam'/>
         <Route path='/ami'/>
         <Route path='/bai'/>
-        <Route path='/ali' />
+        <Route path='/ali' element={<AliaskatPage/>} />
         <Route path='/ily' />
         <Route path='/erm' element={<ErmPage/>}/>
-        <Route path='/ari' />
+        <Route path='/ari' element={<Ari />} />
       </Routes>
     </Router>
     </>
