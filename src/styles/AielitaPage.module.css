@@ -1,0 +1,17 @@
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.box h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     
+}
+.box h1{
+    font-family: "Mea Culpa", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

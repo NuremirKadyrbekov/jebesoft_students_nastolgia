@@ -2,6 +2,7 @@
 import './App.css'
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import AielitaPage from './pages/AielitaPage'
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/nur'/>
         <Route path='/med'/>
-        <Route path='/aie'/>
+        <Route path='/aie' element={<AielitaPage/>}/>
         <Route path='/sam'/>
         <Route path='/ami'/>
         <Route path='/bai'/>
