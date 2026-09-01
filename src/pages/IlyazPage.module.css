@@ -1,0 +1,267 @@
+/* ==========================================================================
+   CSS Модуль с точной стилизацией под дизайн-макет
+   ========================================================================== */
+:root {
+  --yellow-bg: #f5c831;
+  --text-dark: #2c2c2c;
+  --text-muted: #666666;
+  --btn-gray: #a8a8a8;
+}
+
+.page {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: var(--btn-gray);
+  transition: color 0.2s;
+}
+
+.navLinks a:hover,
+.activeLink {
+  color: var(--yellow-bg) !important;
+  border-bottom: 2px solid var(--yellow-bg);
+  padding-bottom: 4px;
+}
+
+.searchIcon {
+  font-size: 12px;
+  color: var(--btn-gray);
+  cursor: pointer;
+}
+
+.contactBtn {
+  background-color: var(--btn-gray);
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 12px 24px;
+  letter-spacing: 0.5px;
+  transition: background-color 0.2s;
+}
+
+.contactBtn:hover {
+  background-color: var(--text-dark);
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 40px 80px 80px 80px;
+}
+
+.heroContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.avatarWrapper {
+  flex-shrink: 0;
+}
+
+.avatar {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bioContent {
+  max-width: 550px;
+}
+
+.name {
+  font-size: 38px;
+  font-weight: 400;
+  font-family: Georgia, 'Times New Roman', serif;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--btn-gray);
+  margin-bottom: 24px;
+  font-style: italic;
+}
+
+.description {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* Yellow Bottom Section */
+.detailsSection {
+  background-color: var(--yellow-bg);
+  padding: 60px 80px 80px 80px;
+  color: var(--text-dark);
+}
+
+.detailsContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.8fr;
+  gap: 50px;
+}
+
+.columnTitle {
+  font-size: 15px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.columnTitle::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 2px;
+  background-color: var(--text-dark);
+  margin: 6px auto 0 auto;
+}
+
+/* Column 1: Languages */
+.languageList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.langRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.langName {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.barTrack {
+  width: 100%;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.barFill {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+/* Column 2: Circle Skills */
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.circleCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.skillName {
+  font-size: 9px;
+  font-weight: 800;
+  max-width: 80px;
+  line-height: 1.2;
+}
+
+/* Column 3: Hobbies */
+.hobbiesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.hobbyCircle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hobbyIcon {
+  font-size: 20px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .detailsContainer {
+    grid-template-columns: 1fr;
+  }
+  .navbar {
+    padding: 20px;
+  }
+  .heroSection, .detailsSection {
+    padding: 40px 20px;
+  }
+}

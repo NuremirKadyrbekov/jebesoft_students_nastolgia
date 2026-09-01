@@ -2,11 +2,13 @@
 import './App.css'
 
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import IlyazPage from './pages/IlyazPage'
 
 function App() {
 
   return (
     <>
+    <IlyazPage/>
     <Router>
       <Routes>
         <Route path='/nur'/>
